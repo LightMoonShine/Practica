@@ -1,0 +1,230 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        header {
+            background: black;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 48px;
+            text-shadow: 2px 2px black;
+        }
+
+        nav {
+            background: #ff7a2f;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff7a2f;
+            text-decoration: underline;
+        }
+
+        .content-block {
+            background: #2a2a2a;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #ff7a2f;
+            font-size: 32px;
+            border-bottom: 2px solid #ff7a2f;
+            padding-bottom: 10px;
+        }
+
+        .weapon {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #333;
+            border-radius: 8px;
+        }
+
+        .weapon img {
+            width: 200px;
+            margin-right: 30px;
+            border: 2px solid #ff7a2f;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 20px;
+            margin: 15px 0;
+            background: #444;
+            color: white;
+            border: 2px solid #ff7a2f;
+        }
+
+        .contacts {
+            background: black;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .ability {
+            background: #333;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #ff7a2f;
+        }
+    
+        .ability img {
+            width: 200px;
+            float: left;
+            margin-right: 20px;
+        }
+    
+        .ability h3 {
+            color: #ff7a2f;
+            font-size: 24px;
+            margin-top: 0;
+        }
+    
+        .story-item {
+            background: #2a2a2a;
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 4px solid #ff7a2f;
+        }
+    
+        .story-item h3 {
+            color: #ff7a2f;
+            font-size: 22px;
+            margin: 0 0 10px 0;
+        }
+    
+        .story-item img {
+            border: 2px solid #ff7a2f;
+            margin: 10px 0;
+        }
+    
+        .story-item ul {
+            padding-left: 25px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <img src="https://gta5rp.com/_next/image?url=%2Fimages%2Flogo%2Fmain.png&w=1920&q=100"></h1>
+    </header>
+
+    <nav>
+        <a href="#weapons">Оружие</a>
+        <a href="#factions">Фракции</a>
+        <a href="#rules">Правила</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="content-block">
+        <h2>Выбери свою роль:</h2>
+        <select>
+            <option>Криминальный авторитет</option>
+            <option>Офицер полиции</option>
+            <option>Медик скорой помощи</option>
+            <option>Автомеханик</option>
+        </select>
+    </div>
+
+    <div id="weapons" class="content-block">
+        <h2>Арсенал Лос-Сантоса</h2>
+        
+        <div class="weapon">
+            <img src="https://avatars.mds.yandex.net/i?id=b541f708847a7eee67f4e74882bff905_l-5319263-images-thumbs&n=13" alt="Pistol">
+            <img src="https://avatars.mds.yandex.net/i?id=6249a23ba87e930bfee855877ddcc004_l-5436811-images-thumbs&n=13" alt="Combat Pistol">
+            <div>
+                <h3>Пистолеты</h3>
+                <p>Базовое оружие для самообороны. Доступны всем гражданам Лос-Сантоса</p>
+            </div>
+        </div>
+
+        <div class="weapon">
+            <img src="https://avatars.mds.yandex.net/i?id=cc0a27c9b12615fed7957e0f54e51793_l-5209452-images-thumbs&n=13" alt="Assault Rifle">
+            <img src="https://avatars.mds.yandex.net/i?id=5a37ec999183b1627a475bf40ddf55b1e97baf5f-3753631-images-thumbs&n=13" alt="Carbine Rifle">
+            <div>
+                <h3>Штурмовые винтовки</h3>
+                <p>Только для лицензированных владельцев и сотрудников правоохранительных органов</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="factions" class="content-block">
+        <h2>Фракции города</h2>
+        
+        <div class="ability">
+            <img src="https://avatars.mds.yandex.net/i?id=f028ed3dfd6d353440b1dc7b4478b33a_l-9245081-images-thumbs&n=13" alt="Ballas">
+            <img src="https://i.pinimg.com/originals/ce/75/c0/ce75c0aa63b8d1a838665594895fdead.jpg" alt="Families">
+            <div class="ability-info">
+                <h3>Криминальные группировки</h3>
+                <p>▸ Ballas - контролируют район Дэвис<br>
+                    ▸ Families - доминируют в Чемберлен-Хиллз<br>
+                    ▸ Vagos - влияют на восточную часть города<br>
+                    <span style="color:#ff7a2f">Требуется: криминальная репутация</span></p>
+            </div>
+        </div>
+    
+        <div class="ability">
+            <img src="https://img.gta5-mods.com/q75/images/improved-vanilla-lspd-male-cops-los-santos-police-department/5829a5-20191212014832_1.jpg" alt="LSPD">
+            <img src="https://gta5mod.net/wp-content/uploads/2021/06/Improved-Vanilla-Los-Santos-County-Sheriff-Deputies5.webp" alt="LSSD">
+            <div class="ability-info">
+                <h3>Правоохранительные органы</h3>
+                <p>▸ LSPD - Полиция Лос-Сантоса<br>
+                    ▸ LSSD - Шериф округа Блейн<br>
+                    ▸ NOOSE - Специальные подразделения<br>
+                    <span style="color:#ff7a2f">Требуется: чистая криминальная история</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="rules" class="content-block">
+        <h2>Основные правила RP</h2>
+        
+        <div class="story-item">
+            <h3>1. RolePlay (RP)</h3>
+            <p>Всегда оставайтесь в роли своего персонажа. Не используйте OOC (out of character) информацию в игре.</p>
+        </div>
+    
+        <div class="story-item">
+            <h3>2. Новый Жизненный (НЖ)</h3>
+            <p>После смерти персонаж теряет память о событиях, приведших к его смерти. Нельзя мстить за предыдущую жизнь.</p>
+            <ul>
+                <li>Исключение: смерть в спецмероприятиях</li>
+                <li>Разрешен НЖ-договор между игроками</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contacts" class="contacts">
+        <h2>Присоединяйся к нам!</h2>
+        <p>Discord: discord.gg/gta5rp</p>
+        <p>IP сервера: play.gta5rp.com</p>
+        <p>Поддержка: support@gta5rp.com</p>
+    </div>
+</body>
+</html>
