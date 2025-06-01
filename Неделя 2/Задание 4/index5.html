@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Helvetica;
+                margin: 0;
+                padding: 20px;
+            }
+
+            nav {
+                text-align: right;
+                padding-bottom: 25px;
+                border-bottom: 1px dashed black;
+            }
+
+            nav a {
+                margin: 10px;
+                text-decoration: none;
+            }
+
+            h1 {
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .text {
+                width: 300px;
+            }
+
+            .text p {
+                color: #b8e0e1;
+                font-size: 35px;
+            }
+
+            .text em {
+                display: block;
+                text-align: right;
+            }
+
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0px;
+                width: 500px;
+            }
+
+            .gallery img {
+                width: 166.66px;
+                height: 250px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <nav> <a href="#">Сезонные акции</a> <a href="#">Контакты</a> </nav>
+        <h1>Горные экскурсии</h1>
+        <div class="container">
+            <div class="gallery">
+                <img src="https://i.pinimg.com/236x/60/3d/71/603d715669d4c5065d6b8bcb77504cea.jpg">
+                <img src="https://fmcic.ca/wp-content/uploads/2022/04/mountains-lake-nature-4641428-686x1030.jpg">
+                <img src="https://avatars.mds.yandex.net/i?id=2bca17ac30ce4f780b4c888b0ce0109005835c00-12517331-images-thumbs&n=13">
+                <img src="https://avatars.mds.yandex.net/i?id=c5c18d677b7508d0afa23638d20f74ea_l-4393404-images-thumbs&n=13">
+                <img src="https://avatars.mds.yandex.net/i?id=60b1f34704fbcccfe62771ddbba830bb_l-5858863-images-thumbs&n=13">
+                <img src="https://avatars.mds.yandex.net/i?id=533666671d31101a459258269f4f9a20_l-5284012-images-thumbs&n=13">
+            </div>
+            <div class="text">
+                <p>Только</p>
+                <p><em>горы!</em></p>
+                <p>Только</p>
+                <p><em>вперёд!</em></p>
+            </div>
+        </div>
+    </body>
+</html>
