@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тур Агентство</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        header {
+            background-color: #3a86ff;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .about {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .tours {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #3a86ff;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .tour-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .tour {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            width: calc(50% - 8px);
+        }
+        
+        .tour img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .tour-info {
+            padding: 10px;
+        }
+        
+        .tour-info h3 {
+            color: #3a86ff;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #ff006e;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background-color: #2b2d42;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .contacts {
+            margin-top: 10px;
+        }
+        
+        .contacts p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Тур Агентство Melomory</h1>
+            <p>Сложные решения, чтобы вы не отдохнули.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="about">
+            <h2>О нас</h2>
+            <p>Мы предлагаем дорогие туры в худшем курорте мира. Более 1 недели на рынке туристических услуг. Гарантия больших цен и плохого качества обслуживания.</p>
+            <p>Наши специалисты выберут тур которые сами захотят. Работаем со скрытыми платежами и комиссиями.</p>
+        </section>
+        
+        <section class="tours">
+            <h2>Наши предложения</h2>
+            <div class="tour-list">
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Италия">
+                    <div class="tour-info">
+                        <h3>Италия</h3>
+                        <p>Рим, Венеция, Флоренция</p>
+                        <div class="price">от 1 500 000 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Тайланд">
+                    <div class="tour-info">
+                        <h3>Тайланд</h3>
+                        <p>Пхукет, отель 4</p>
+                        <div class="price">от 1 000 000 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Франция">
+                    <div class="tour-info">
+                        <h3>Франция</h3>
+                        <p>Париж + замки</p>
+                        <div class="price">от 2 000 000 руб.</div>
+                    </div>
+                </div>
+                
+                <div class="tour">
+                    <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Мальдивы">
+                    <div class="tour-info">
+                        <h3>Мальдивы</h3>
+                        <p>Вилла на воде</p>
+                        <div class="price">от 1 200 000 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts">
+                <p>Телефон: +7 (777) 777-77-77</p>
+                <p>Email: plohoiOtdih@mail.ru</p>
+                <p>Адрес: г. Обман, ул. Дорогая, -1</p>
+            </div>
+            <p style="margin-top: 15px;">© 2027 Тур Агентство Melomory</p>
+        </div>
+    </footer>
+</body>
+</html>
