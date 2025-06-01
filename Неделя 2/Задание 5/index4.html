@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>Зоопарк редких животных</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        .special-offer {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .reviews {
+            margin-top: 40px;
+        }
+        
+        .review-item {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .review-author {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .review-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #3498db;
+            border-radius: 3px;
+            background-color: white;
+        }
+        
+        .review-item.checked::before {
+            background-color: #3498db;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Зоопарк редких животных</h1>
+    
+    <h2>Более 150 видов</h2>
+    <p>Вы увидите крупных диких представителей живой природы, а также редких птиц, змей и многое другое!</p>
+    
+    <div class="reviews">
+        <div class="review-item">
+            <span class="review-author">Олег</span>
+            Были в серпентарии. Ребёнок в восторге!
+        </div>
+        
+        <div class="review-item checked">
+            <span class="review-author">Наталья</span>
+            Спасибо за экскурсию! Очень интересно!
+        </div>
+        
+        <div class="review-item checked">
+            <span class="review-author">Анна</span>
+            Так я не попал к птицам, жаль...<br>
+            Однако, остальное очень здорово!
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="special-offer">
+        <h2>Внимание! Специальное предложение от партнёра!</h2>
+        <p>Щенки хаски от заводчика со всеми документами</p>
+    </div>
+</body>
+</html>
